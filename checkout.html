@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Factory Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="branding">
+      <h1>Factory Shop</h1>
+    </div>
+  </header>
+
+  <main class="checkout-container">
+    <!-- Left: Customer Details -->
+    <section class="checkout-left">
+      <h2>Shipping Information</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="03XX-XXXXXXX" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Street, Building, Area" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="City" required>
+
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" placeholder="Zip Code" required>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" placeholder="Country" required>
+      </form>
+    </section>
+
+    <!-- Right: Order Summary -->
+    <section class="checkout-right">
+      <h2>Order Summary</h2>
+      <div class="summary-items" id="summary-items">
+        <p class="empty-cart">Your cart is empty</p>
+      </div>
+      <p class="total">Total: Rs. <span id="summary-total">0</span></p>
+      <button class="checkout-btn" id="checkout-btn">Place Order</button>
+    </section>
+  </main>
+</body>
+</html>
